@@ -4,9 +4,9 @@ from datetime import datetime
 from database import insert_engagement_data, create_engagement_table
 from config import API_TOKEN
 # === ЗАМЕНИ на своё ===
-api_id = 26184400
-api_hash = '119edbcae97856f3f19b73220ada2bdf'
-channel = 'test_chanel22343'  # ID или username канала, например 'my_channel'
+api_id = 
+api_hash = ''
+channel = ''  # ID или username канала, например 'my_channel'
 
 # Создание таблицы вовлеченности (если ещё не создана)
 create_engagement_table()
