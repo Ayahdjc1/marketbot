@@ -1,0 +1,17 @@
+[Unit]
+Description=My Python Project Service
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/bogdan/Рабочий стол/telegrammbots/bot_Psich/
+ExecStart=/home/bogdan/Рабочий стол/telegrammbots/bot_Psich/start_script.sh
+Restart=always
+User=bogdan  
+Group=group  # Заменить на группу, если нужно
+Environment=PATH=/home/bogdan/Рабочий стол/telegrammbots/bot_Psich/bot/bin:$PATH
+Environment=VIRTUAL_ENV=/home/bogdan/Рабочий стол/telegrammbots/bot_Psich/bot
+ExecStartPre=/bin/sleep 10  # задержка перед запуском, если нужно
+
+[Install]
+WantedBy=multi-user.target

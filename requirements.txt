@@ -1,0 +1,9 @@
+python-telegram-bot==13.11      # Для работы с Telegram API
+matplotlib             # Для создания графиков вовлеченности
+pandas                 # Для работы с данными (DataFrame)
+python-docx             # Для создания отчетов в формате .docx
+ollama                  # Для взаимодействия с моделью Ollama (LLaMA 3       
+telethon==1.35.0
+
+
+
